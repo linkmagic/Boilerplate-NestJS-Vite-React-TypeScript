@@ -1,3 +1,29 @@
+A complete authentication and user management system built with NestJS on the backend and React + Redux Toolkit + RTK Query on the frontend. It implements a modern token-based flow using JWT access and refresh tokens, including automatic access token renewal.
+
+Key Features:
+User registration and login
+Route protection via JWT Guards
+Tokens stored in Redux state
+Automatic access token refresh via RTK Query
+Profile page using /auth/me
+Protected frontend routes with ProtectedRoute
+CORS support for local network development
+
+
+Technologies:
+
+Backend (NestJS):
+Node.js, NestJS, TypeORM, PostgreSQL
+JWT-based Auth (access + refresh tokens)
+Docker support (optional)
+
+Frontend (React):
+React (Vite), Redux Toolkit, RTK Query
+React Router, SCSS Modules
+Centralized API auth and auto-refresh flow
+
+---
+
 # Backend
 
 NestJS backend for authentication and user management.
