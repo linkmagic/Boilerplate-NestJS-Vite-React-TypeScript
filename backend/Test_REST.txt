@@ -1,0 +1,39 @@
+### Get info by ID
+
+GET http://localhost:3000/users/fe9d9a5b-2d5a-44cb-b2b0-8f2224e6ab70
+
+### Get info about Me
+
+GET http://localhost:3000/auth/me
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmZTlkOWE1Yi0yZDVhLTQ0Y2ItYjJiMC04ZjIyMjRlNmFiNzAiLCJlbWFpbCI6Im15LWVtYWlsLTJAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTIxNjIxNDYsImV4cCI6MTc1MjE2MzA0Nn0.qr1FoxLoYRvRoWWSYl8oCYD35_et-_yr_qCrQ9Sr310
+
+### Rsgistration
+
+POST http://localhost:3000/auth/register
+Content-type: application/json
+
+{
+  "email": "my-email-2@example.com",
+  "fullName": "John Q.",
+  "password": "1234567890"
+}
+
+### Login
+
+POST http://localhost:3000/auth/login
+Content-type: application/json
+
+{
+  "email": "my-email-2@example.com",
+  "password": "1234567890"
+}
+
+### Refresh token
+
+POST http://localhost:3000/auth/refresh
+Content-type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmZTlkOWE1Yi0yZDVhLTQ0Y2ItYjJiMC04ZjIyMjRlNmFiNzAiLCJpYXQiOjE3NTIyMjY0NTIsImV4cCI6MTc1MjgzMTI1Mn0.5-QOBq2pThSskkIlqVLpaXL73af_Sq9hGMbAKRt2RzE"
+}
